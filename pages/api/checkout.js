@@ -1,8 +1,6 @@
 import { iniciarMongoose } from "@/lib/mongoose";
 import Producto from "@/models/Producto";
-const stripe = require("stripe")(
-  sk_test_51Lilq4D85sfyX3OZismsE3gJ2Orhh6PuFWZ92l6plwGCPsLoTILFvtxOuEvtRKVKehjp6on7CaRJkPGjx25iYgmw00APJjcPv9
-);
+const stripe = require("stripe")(process.env.LLAVE_SECRETA_STRIPE);
 
 export default async function handler(req, res) {
   await iniciarMongoose();
