@@ -43,7 +43,7 @@ const checkout = () => {
       subtotal += precio;
     }
   }
-  const costoEnvio = 10;
+  const costoEnvio = 0;
   const total = subtotal + costoEnvio;
 
   return (
