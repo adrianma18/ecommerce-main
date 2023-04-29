@@ -55,7 +55,7 @@ const checkout = () => {
         </div>
 
         {!infoProductos.length ? (
-          <div>No se encuentran productos en la cesta de compra</div>
+          <div></div>
         ) : (
           infoProductos.map((info, index) => {
             const cantidad = productosSeleccionados.filter(
