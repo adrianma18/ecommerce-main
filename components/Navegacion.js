@@ -26,7 +26,7 @@ const Navegacion = () => {
         href={"/checkout"}
         className="mr-3 text-2xl flex gap-3 hover:text-green-500">
         <FaShoppingCart />
-        <span className="text-xl text-white">
+        <span className="text-base text-white">
           {productosSeleccionados.length} en Cesta de Compra
         </span>
       </Link>
